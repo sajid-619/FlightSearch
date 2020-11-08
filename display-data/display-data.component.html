@@ -1,0 +1,26 @@
+<h1>Registered Employees</h1> 
+<div class="d-flex justify-content-center"> 
+<div class="spinner-border" role="status" > 
+    <span class="sr-only" id="loading">Loading...</span> 
+</div> 
+</div> 
+<table class="table" id='tab'> 
+    <thead> 
+    <tr> 
+        <th scope="col">Logo</th> 
+        <th scope="col">Name</th> 
+        <th scope="col">Outbound flight duration</th>
+        <th scope="col">Itinery Id</th>
+        <th scope="col">Inbound flight duration</th> 
+        <th scope="col">Price</th> 
+    </tr> 
+    </thead> 
+    <tbody> 
+    <tr *ngFor="let e of lis;"> 
+        <td>{{ e.logo }}</td> 
+        <td>{{ e.name }}</td> 
+        <td>{{ e.office }}</td> 
+        <td>{{ e.salary }}</td> 
+    </tr> 
+    </tbody> 
+</table>         
